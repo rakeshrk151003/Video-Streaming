@@ -3,7 +3,8 @@ nav{
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     background:#ffff;
-    position:sticky;
+    position:fixed;
+    width:100%;
     top:0;
     z-index:10;
 
@@ -38,4 +39,24 @@ nav{
 .nav-right .user-icon{
     width:35px;
     border-radius:50%;
+}
+
+@media(max-width:900px){
+    .menu-icon{
+        display: none;
+    }
+    .nav-right img{
+        display:none;
+    }
+    .nav-right .user-icon{
+        display:block;
+        width:30px;
+    }
+    .logo{
+        width:90px;
+    }
+    .nav-middle .search-box input{
+        width:100px;
+        
+    }
 }
